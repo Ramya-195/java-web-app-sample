@@ -11,8 +11,8 @@ pipeline {
   agent any
   
   environment {
-    AZURE_SUBSCRIPTION_ID = '<69d958df-11de-4ec7-9cec-98616f7ab281>'
-    AZURE_TENANT_ID = '<91ddffdf-038f-4435-9230-c76a677d6a2a>'
+    AZURE_SUBSCRIPTION_ID = '69d958df-11de-4ec7-9cec-98616f7ab281'
+    AZURE_TENANT_ID = '91ddffdf-038f-4435-9230-c76a677d6a2a'
   }
   
   stages {
