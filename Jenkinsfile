@@ -31,8 +31,8 @@ pipeline {
     stage('deploy') {
       steps {
         script {
-          def resourceGroup = '<Workshop1_group>'
-          def webAppName = '<Ramyaapps>'
+          def resourceGroup = 'Ramyaapps12_group'
+          def webAppName = 'Ramyaapps12'
           
           // login Azure
           withCredentials([azureServicePrincipal('8f9e2399-d235-4777-8dff-c83e15da407f')]) {{
