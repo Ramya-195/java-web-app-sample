@@ -35,7 +35,7 @@ pipeline {
           def webAppName = 'Ramyaapps12'
           
           // login Azure
-          withCredentials([azureServicePrincipal('8f9e2399-d235-4777-8dff-c83e15da407f')]) {{
+          withCredentials([azureServicePrincipal('8f9e2399-d235-4777-8dff-c83e15da407f')]) {
             sh '''
               az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
               az account set -s $AZURE_SUBSCRIPTION_ID
